@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 var cors = require('cors');
 app.use(cors()) ;
-// app.use(express.static('public/build'));
+app.use(express.static('public/build'));
 
 const cookieParser=require('cookie-parser');
 //middleware func-> post, front-> json
